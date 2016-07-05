@@ -1,0 +1,26 @@
+{
+  "name": "osprey-middleware",
+  "version": "0.1.0",
+  "description": "Osprey middleware",
+  "main": "osprey-middleware.js",
+  "files": [
+    "./osprey-middleware.js"
+  ],
+  "scripts": {
+    "test": "eslint osprey-middleware.js",
+    "postversion": "git push origin HEAD && git push origin $(git describe --tags) && npm publish"
+  },
+  "keywords": [
+    "osprey",
+    "middleware"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "osprey": "~0.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^2.13.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.1"
+  }
+}
