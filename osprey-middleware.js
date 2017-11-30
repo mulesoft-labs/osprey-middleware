@@ -2,16 +2,17 @@
 
 const osprey = require('osprey');
 
-module.exports = ospreyMiddleware;
-
-function ospreyMiddleware(pathToRamlFile, options) {
+function ospreyMiddleware(pathToRamlFile, options = {}) {
   let promise;
-  options = options || {};
+  // eslint-disable-next-line no-param-reassign
   options.disableErrorInterception = true;
 
+  // eslint-disable-next-line no-return-assign
   return (req, res, next) => (
     (promise || (promise = osprey.loadFile(pathToRamlFile, options)))
-      .then((middleware) => middleware(req, res, next))
+      .then(middleware => middleware(req, res, next))
       .catch(next)
   );
 }
+
+module.exports = ospreyMiddleware;

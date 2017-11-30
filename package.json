@@ -19,8 +19,17 @@
     "osprey": "~0.4.1"
   },
   "devDependencies": {
-    "eslint": "^2.13.1",
-    "eslint-config-airbnb": "^9.0.1",
-    "eslint-plugin-import": "^1.10.1"
-  }
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mulesoft-labs/osprey-middleware.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/mulesoft-labs/osprey-middleware/issues"
+  },
+  "homepage": "https://github.com/mulesoft-labs/osprey-middleware#readme"
 }
