@@ -6,6 +6,10 @@ function ospreyMiddleware(pathToRamlFile, options = {}) {
   let promise;
   // eslint-disable-next-line no-param-reassign
   options.disableErrorInterception = true;
+  // eslint-disable-next-line no-param-reassign
+  options.server = options.server || {};
+  // eslint-disable-next-line no-param-reassign
+  options.server.limit = options.server.limit || '400kb';
 
   // eslint-disable-next-line no-return-assign
   return (req, res, next) => (
