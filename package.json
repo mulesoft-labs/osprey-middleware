@@ -16,7 +16,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "osprey": "~0.5.3"
+    "osprey": "~0.5.4"
   },
   "devDependencies": {
     "eslint": "^4.9.0",
