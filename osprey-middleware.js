@@ -14,7 +14,7 @@ function ospreyMiddleware(pathToRamlFile, options = {}) {
   // eslint-disable-next-line no-return-assign
   return (req, res, next) => (
     (promise || (promise = osprey.loadFile(pathToRamlFile, options)))
-      .then(middleware => middleware(req, res, next))
+      .then((middleware) => middleware(req, res, next))
       .catch(next)
   );
 }
