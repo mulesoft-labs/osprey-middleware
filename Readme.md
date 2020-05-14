@@ -16,7 +16,7 @@ npm install osprey-middleware
 var ospreyMiddleware = require('osprey-middleware');
 var express = require('express');
 
-express.Router().use(ospreyMiddleware(ramlPath, options);
+express.Router().use(ospreyMiddleware(ramlPath, options));
 ```
 
 ## License
